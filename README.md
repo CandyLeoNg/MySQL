@@ -35,6 +35,7 @@ mysql安装
 
 之后复制下面这个代码放在文件下，以下代码除安装目录和数据的存放目录（改成你刚才解压后的文件存放的位置）需修改，其余不用修改
 
+```
 [mysqld]
 # 设置3306端口
 port=3306
@@ -60,6 +61,7 @@ default-character-set=utf8mb4
 # 设置mysql客户端连接服务端时默认使用的端口
 port=3306
 default-character-set=utf8mb4
+```
 
 ## 3.初始化MySQL
 
