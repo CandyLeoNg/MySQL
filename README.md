@@ -71,7 +71,7 @@ default-character-set=utf8mb4
 
 ----------------------------
 
-输入 cd D:\mysql\mysql-8.0.28-winx64\bin 进入bin目录，
+输入命令：cd D:\mysql\mysql-8.0.28-winx64\bin 进入bin目录，
 
 ![image](https://user-images.githubusercontent.com/63994835/159452830-530db3e8-4af0-4715-89cd-d01434b91bb9.png)
 
@@ -113,8 +113,90 @@ default-character-set=utf8mb4
 
 ----------------------------
 
-输入刚才保存的密码，密码不会显示，大家输入后直接点击回车即可
+输入刚才保存的密码，大家输入后直接点击回车即可
 
-![image](https://user-images.githubusercontent.com/63994835/159454698-b2610e33-8d9f-4f74-9ccf-72fca7dd9507.png)
+![image](https://user-images.githubusercontent.com/63994835/159456002-c2ee539e-50ce-4bda-b636-c2756c63394e.png)
 
+----------------------------
+
+由于初始密码过于复杂，很难记，下面更改下密码
+
+输入命令：ALTER USER 'root'@'localhost' IDENTIFIED BY '新的密码'
+
+![image](https://user-images.githubusercontent.com/63994835/159464763-40f4b8d4-4b14-48f5-9950-d2a6c4126473.png)
+
+## 5.配置环境变量
+
+为了避免每次都需要输入cd命令，再输入相关命令的麻烦， 我们配置下环境变量即可。
+
+首先，打开系统环境变量界面
+
+![image](https://user-images.githubusercontent.com/63994835/159465562-dc34a536-0b70-4fa8-90eb-028f59c4b247.png)
+
+----------------------------
+
+点击"环境变量"
+
+![image](https://user-images.githubusercontent.com/63994835/159465655-14fd53bf-a61d-46b8-b4b7-59bdbbd771e9.png)
+
+----------------------------
+
+点击"新建"
+
+![image](https://user-images.githubusercontent.com/63994835/159466018-98a44256-7865-4d40-8d71-72bc36c8e912.png)
+
+----------------------------
+
+再输入以下内容，变量值要根据自己的存放位置进行更改；最后，点击"确定"
+
+![image](https://user-images.githubusercontent.com/63994835/159466192-a8b9ff20-3f28-42b5-8daf-58665d349d87.png)
+
+----------------------------
+
+然后，点击"系统变量"中的path
+
+![image](https://user-images.githubusercontent.com/63994835/159465790-5f19d334-6080-491b-b01a-f55f5aacb3a3.png)
+
+----------------------------
+
+点击"新建"
+
+![image](https://user-images.githubusercontent.com/63994835/159465818-7ffb6c2d-8921-4e82-9bb1-2473e60de03d.png)
+
+----------------------------
+
+加入以下两个内容即可，点击"确定"
+
+![image](https://user-images.githubusercontent.com/63994835/159466559-d0d30e8c-cd16-46cc-b07d-eab18ca0783b.png)
+
+----------------------------
+
+此外，还需要在自己的环境变量中，加入bin的路径，如下
+
+![image](https://user-images.githubusercontent.com/63994835/159467712-7d3f02dd-2bf0-4d5c-9ff8-31fda7ca9e5d.png)
+
+----------------------------
+
+![image](https://user-images.githubusercontent.com/63994835/159467736-70ef9ebb-c47e-4722-9627-d770bc3ff8da.png)
+
+----------------------------
+
+后面，大家需要进入mysql，只需要在命令行输入：mysql -uroot -p 
+
+![image](https://user-images.githubusercontent.com/63994835/159467808-7b8755eb-31df-4196-a64b-c91799a21254.png)
+
+
+## 6.mysql 连接 Navicat
+
+打开Navicat, 点击"连接"
+
+![image](https://user-images.githubusercontent.com/63994835/159467978-d49a81d9-f53e-445b-9975-f40786296004.png)
+
+选择"mysql"
+
+![image](https://user-images.githubusercontent.com/63994835/159468033-31e7c9ab-639d-4f6c-9304-4fa5f1ac2df9.png)
+
+随便输入一个连接名，然后输入你的mysql密码就行，点击"确定"
+
+![image](https://user-images.githubusercontent.com/63994835/159468188-9248c57e-ac3b-4d83-8967-e02b4508e96b.png)
 
